@@ -10,41 +10,53 @@
       padding: 0;
       background-color: #000;
       color: #fff;
-      font-family: Arial, sans-serif;
-      height: 100vh;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
     }
 
-    .container {
+    .content {
       text-align: center;
-      padding: 20px;
+      max-width: 600px;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      font-weight: normal;
+      font-size: 3rem;
+      margin: 0 0 10px;
+      font-weight: 300;
     }
 
-    p {
-      font-size: 1.1rem;
-      margin: 6px 0;
+    .subheading {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 60px;
+      color: #ccc;
+    }
+
+    .section p {
+      margin: 10px 0;
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: #e0e0e0;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <div class="content">
     <h1>Sarah Viana</h1>
-    <p>Acadêmica em Engenharia de Software</p>
-    <p>Curso de curta duração em Python</p>
-    <p>Inteligência Artificial na Educação</p>
-    <p>Gestão Financeira</p>
-    <p>Inglês — Folkuniversitet</p>
+    <div class="subheading">Acadêmica em Engenharia de Software</div>
+
+    <div class="section">
+      <p>Curso de curta duração em Python</p>
+      <p>Inteligência Artificial na Educação</p>
+      <p>Gestão Financeira</p>
+      <p>Inglês — Folkuniversitet</p>
+    </div>
   </div>
 
 </body>
 </html>
-
