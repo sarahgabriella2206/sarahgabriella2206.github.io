@@ -16,7 +16,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
 
@@ -28,19 +28,30 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 10px;
-      color: #00e0ff; /* destaque no nome */
+      color: #00e0ff;
     }
 
     .subheading {
       font-size: 1.5rem;
-      color: #ff00c8; /* destaque na formação */
+      color: #ff00c8;
       margin-bottom: 60px;
     }
 
-    .section p {
-      margin: 16px 0;
-      font-size: 1.3rem;
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .course {
+      font-size: 1.2rem;
+      line-height: 1.6;
       color: #f2f2f2;
+    }
+
+    .institution {
+      font-size: 1rem;
+      color: #aaa;
     }
 
     footer {
@@ -57,10 +68,25 @@
     <div class="subheading">Acadêmica em Engenharia de Software</div>
 
     <div class="section">
-      <p>Curso de curta duração em Python — Centro Universitário Ateneu</p>
-      <p>Inteligência Artificial na Educação — Centro Universitário Ateneu</p>
-      <p>Gestão Financeira — Senac</p>
-      <p>Inglês — Folkuniversitet</p>
+      <div>
+        <div class="course">Curso de curta duração em Python</div>
+        <div class="institution">Centro Universitário Ateneu</div>
+      </div>
+
+      <div>
+        <div class="course">Inteligência Artificial na Educação</div>
+        <div class="institution">Centro Universitário Ateneu</div>
+      </div>
+
+      <div>
+        <div class="course">Gestão Financeira</div>
+        <div class="institution">Senac</div>
+      </div>
+
+      <div>
+        <div class="course">Inglês</div>
+        <div class="institution">Folkuniversitet</div>
+      </div>
     </div>
 
     <footer>
